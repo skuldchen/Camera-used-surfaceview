@@ -10,7 +10,7 @@ want reader can reading by themself.
 This sample code used SurfaceView, therefore Activity life does not match in this program.
 This sample code also required callback function.
 Reader could require basic element before they start this program.
-Because author have algorithm research, the algorithm will wase many time, so he recommand subprogram into one .java file. 
+Because author have algorithm research BG skill, the algorithm will wase many time, so he recommand subprogram into one .java file. 
 This means that DO NOT create many subprogram in many .java files. 
 This program should be one .java file.
 
