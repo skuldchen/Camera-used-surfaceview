@@ -69,32 +69,11 @@ This program should be one .java file.
 //	        mCamera.setParameters(parameters);
 
 	        //mCamera.setDisplayOrientation(90); 
-    	sk_mCamera.setDisplayOrientation(getPreviewDegree(MainActivity.this));	        
+         
     	sk_mCamera.startPreview();
 	    
 	}
-    public static int getPreviewDegree(Activity activity)
-    {
-    	int rotation = activity.getWindowManager().getDefaultDisplay().getRotation();
-    	int degree=0;
-    	switch(rotation)
-    	{
-    	case Surface.ROTATION_0:
-    		degree = 90;
-    		break;
-    	case Surface.ROTATION_90:
-    		degree= 0;
-    		break;
-	    case Surface.ROTATION_180:
-	        degree=270;
-	    	break;
-	    case Surface.ROTATION_270:
-	        degree = 180;
-	        break;
-	    }
-	    return degree;
-	    
-	}
+ 
 	
     @Override
 	public void surfaceDestroyed(SurfaceHolder holder) 
